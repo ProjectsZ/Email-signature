@@ -1,0 +1,214 @@
+
+
+@orange: #FFAD25;
+@grey: #777778;
+
+@orange-500: #FF9800;
+
+@grey-500: #9E9E9E;
+@grey-600: #757575;
+@grey-700: #616161;
+@grey-900: #212121;
+
+@txt-shadown: 0 0 0.5px rgba(0, 0, 0, 0.1);
+
+@font-face {
+    font-family: "Venera Light";
+    src:url(../font/Venera-500.ttf);
+}
+
+@font-face {
+    font-family: "Venera Bold";
+    src:url(../font/Venera-900.ttf);
+}
+
+@font-face {
+    font-family: "Venera Black";
+    src:url(../font/Venera-700.ttf);
+}
+
+@font-face {
+    font-family: "";
+    src:url();
+}
+
+@font-face {font-family: "PerfectSketchW01-Roman";
+    src: url("//db.onlinewebfonts.com/t/daed96d5b68fcf4a7b55e6afbdd8b9b7.eot");
+    src: url("//db.onlinewebfonts.com/t/daed96d5b68fcf4a7b55e6afbdd8b9b7.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/daed96d5b68fcf4a7b55e6afbdd8b9b7.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/daed96d5b68fcf4a7b55e6afbdd8b9b7.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/daed96d5b68fcf4a7b55e6afbdd8b9b7.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/daed96d5b68fcf4a7b55e6afbdd8b9b7.svg#PerfectSketchW01-Roman") format("svg");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Font/ Text may be inflated in this exact proportion 100%*/
+html {
+  text-size-adjust: 100%;  /* Firefox 3.6+ (used prefixed) */
+  -ms-text-size-adjust: 100%; /* Internet Explorer 10+ */
+  -webkit-text-size-adjust: 100%; /* Chrome, Safari 4 */   
+}
+
+body { margin: 0; /* Remove default margin. */ }
+
+/*
+ ROW --> col
+*/
+
+.row{
+    margin-left: auto; margin-right: auto; margin-bottom: 20px;
+}
+
+.row .col{
+    float:left;
+    padding: 0 0.75rem;
+    min-height: 1px;
+}
+
+.row .col .s6{
+    width: 30%;
+    margin-left: auto;
+    left: auto; right: auto;
+}
+
+/******************************************************************/
+
+.logo{
+    width: 250px;
+    float: left;
+}
+
+.linea{
+    background: @grey-700;
+    height: 180px;
+    width: 5px;
+    float: left; margin-left: 6px;
+    border-radius: 50%;
+}
+
+.title-logo{
+    text-decoration: none;
+}
+
+.title-logo .title{
+    color: @orange;
+    font-family: "Venera Black";
+    font-size: 20px;
+    text-shadow: @txt-shadown;
+    margin: 0px;
+    
+}
+
+.title-logo .sub-title{
+    
+  -webkit-animation: rotando 2s infinite ease-in-out;
+  animation: rotando 2s infinite ease-in-out;
+}
+
+//@-webkit-keyframes rotando {
+//  0% { -webkit-transform: perspective(100px) }
+//  50% { -webkit-transform: perspective(100px) rotateY(180deg) }
+//  100% { -webkit-transform: perspective(100px) rotateY(180deg)  rotateX(180deg) }
+//}
+//
+//@keyframes rotando {
+//  0% { 
+//    transform: perspective(100px) rotateX(0deg) rotateY(0deg);
+//    -webkit-transform: perspective(100px) rotateX(0deg) rotateY(0deg) 
+//  } 50% { 
+//    transform: perspective(100px) rotateX(-180.1deg) rotateY(0deg);
+//    -webkit-transform: perspective(100px) rotateX(-180.1deg) rotateY(0deg) 
+//  } 100% { 
+//    transform: perspective(100px) rotateX(-180deg) rotateY(-179.9deg);
+//    -webkit-transform: perspective(100px) rotateX(-180deg) rotateY(-179.9deg);
+//  }
+//}
+
+
+.title-logo .sub-title{
+    margin: 0px;
+    padding-left: 25px;
+    font-family: "Venera Light";
+    font-size: 8px;
+    text-shadow: @txt-shadown;
+    color: @grey-600;
+}
+
+ul{
+    margin: 0px; margin-top: 10px;
+    padding: 0px;
+    list-style: none;
+    position: fixed;
+    
+}
+
+ul li a{
+    padding-left: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-family: 'Roboto Bold', sans-serif;
+    color: @grey-900;
+    vertical-align: middle;
+}
+
+.txt-datos{
+}
+
+.telefono{
+    margin-left: 5px;
+    margin-top: 7px; position: absolute;
+    
+}
+
+.celular{
+    margin-left: 5px;
+    margin-top: 5px; position: absolute; 
+}
+
+.correo{
+    margin-left: 5px;
+    margin-top: 4px; position: absolute;
+}
+
+.location{
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+ul li a:hover{
+    color: @orange-500;
+    text-shadow: @txt-shadown;
+    transition: 250ms;
+    font-size: 18px;
+}
+
+svg{
+    vertical-align: middle;
+}
+
+svg:hover{
+    width: 30px; height: 30px;
+}
+
+
+
+//.title:hover{
+//    text-shadow: @txt-shadown;
+//    transition: 250ms;
+//    font-size: 22px;
+//}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
